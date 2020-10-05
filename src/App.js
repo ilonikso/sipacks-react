@@ -1,14 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Cards from './components/Cards';
+import Banner from './components/Banner';
+import Contacts from './components/Contacts';
+import MainTable from './components/Table/MainTable';
 
 function App() {
   return (
     <div>
-      <h1>Hello world</h1>
-      <p>This is the start of Sipacks on React</p>
+      <Header />
+      <Banner />
+      <MainTable />
+      <Cards />
+      <Contacts />
+      <Footer />
     </div>
   );
 }
+
+
 
 export default App;
