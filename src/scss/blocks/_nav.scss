@@ -1,11 +1,13 @@
 .nav {
     background: linear-gradient(171.29deg, #FAC405 -29.19%, rgba(244, 36, 8, 0.96) 117.5%);
+    
 
     &__wrapper {
         //max-width: 1265px;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        background-color: black;
     }
 
     &__logo {

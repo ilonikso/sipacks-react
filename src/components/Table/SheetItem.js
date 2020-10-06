@@ -1,4 +1,6 @@
 import React from 'react'
+import SheetMore from './SheetMore'
+import SheetQuestions from './SheetQuestions'
 
 const SheetItem = (props) => {
 
@@ -25,25 +27,11 @@ const SheetItem = (props) => {
 
             <a href="index.html" className="item__data item__like sheet__like button" rel="noopener" target="_blank" title="Оценить пакет">Оценить пакет</a>
 
-            <div className="item__data item__questions sheet__questions" title="Показать список вопросов">
-                <button type="button" className="dropdown-toggle dropdown-toggle-questions button item__questions-button">Темы</button>
-                <div className="dropdown-menu">
-                    <img data-img="" src="" alt="Изображение недоступно"></img>
-                    <div className="outside-link">
-                        <span>Автор пакета разместил список тем на стороннем ресурсе</span>
-                        <a href="index.html" className="button" rel="noopener noreferrer" target="_blank">Перейти</a>
-                    </div>
-                </div>
-            </div>
+            <SheetQuestions />
 
             <a href="index.html" className="item__data item__download button sheet__download" rel="noopener" target="_blank" title="Скачать">Скачать</a>
 
-            <div className="item__data item__more sheet__more" title="Другое">
-                <button type="button" className="dropdown-toggle dropdown-toggle-complaints sheet__more-button">Больше возможностей</button>
-                <div className="dropdown-content sheet__more-drop">
-                    <a href="index" className="sheet__more-link" data-package="Название пакета" data-author="Автор">Пожаловаться</a>
-                </div>
-            </div>
+            <SheetMore />
         </li>
     )
 }
